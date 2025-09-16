@@ -1,0 +1,7 @@
+{
+  "name": "Copy of  NeerAI - India Groundwater Chatbot",
+  "description": "An intelligent chatbot providing detailed information on freshwater and saltwater groundwater levels across all states of India, powered by Gemini.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

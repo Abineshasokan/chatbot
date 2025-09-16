@@ -1,0 +1,74 @@
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.0"
+  }
+}
+</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeerAI - India Groundwater Chatbot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-bg-deep-indigo: #0F0C29;
+        --color-bg-mid-indigo: #302B63;
+        --color-bg-light-indigo: #24243E;
+        --color-accent-teal: #00F2FE;
+        --color-accent-light-teal: #78FFFE;
+        --color-text-primary: #E6E6FA; /* Pearlescent White */
+        --color-text-secondary: #A9A4D4;
+      }
+
+      @keyframes flowing-currents {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: var(--color-text-primary);
+        background: linear-gradient(-45deg, #0F0C29, #302B63, #24243E, #0b172e);
+        background-size: 400% 400%;
+        animation: flowing-currents 25s ease infinite;
+        overflow: hidden;
+      }
+
+      #root {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Custom scrollbar for a more thematic feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(15, 12, 41, 0.5);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(48, 43, 99, 0.8);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 242, 254, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
